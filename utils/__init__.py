@@ -4,7 +4,7 @@ import torch.nn.functional as F
 import numpy as np
 
 
-class AvgrageMeter(object):
+class AverageMeter(object):
 
     def __init__(self):
         self.reset()
