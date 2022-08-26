@@ -66,10 +66,10 @@ def main(args):
     }
 
     for epoch in range(args.start_epoch, args.num_epochs):
-        binary_loss_record = AvgrageMeter()
-        constra_loss_record = AvgrageMeter()
-        adv_loss_record = AvgrageMeter()
-        loss_record = AvgrageMeter()
+        binary_loss_record = AverageMeter()
+        constra_loss_record = AverageMeter()
+        adv_loss_record = AverageMeter()
+        loss_record = AverageMeter()
         # train
         model.train()
         for i, sample_batched in enumerate(train_loader):
