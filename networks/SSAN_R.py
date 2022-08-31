@@ -10,7 +10,7 @@ class Discriminator(nn.Module):
         super(Discriminator, self).__init__()
         self.fc1 = nn.Linear(256, 256)
         # self.fc2 = nn.Linear(256, 3)
-        self.fc2 = nn.Linear(256, 4)
+        self.fc2 = nn.Linear(256, 2)
         self.ad_net = nn.Sequential(
             self.fc1,
             nn.ReLU(inplace=True),
